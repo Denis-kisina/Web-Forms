@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../styles/form-styles.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/form-styles.css"/>
 
     <title>Web Form 1</title>
 </head>
@@ -53,9 +53,9 @@
 
                     <!--                <form method="get" action="#" >-->
                     <div class="form-group">
-                        <label for="productNumber">Product Number</label>
-                        <input class="form-control form-control-lg" type="text" id="productNumber" name="productNumber"
-                               pattern="\d+" onfocus="this.value=''"/>
+                        <label for="productNumberID">Product Number</label>
+                        <input class="form-control form-control-lg" type="text" id="productNumberID" name="productNumber"
+                               pattern="^[0-9]{2,4}$" placeholder="####" required title="2 to 4 numbers"onfocus="this.value=''"/>
                     </div>
 
                     <div class="form-group">
@@ -64,9 +64,9 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="price">Unit Price</label>
-                        <input class="form-control form-control-lg" type="text" id="price" name="price"
-                               pattern="^[-+]?[0-9]*\.?[0-9]+$" value="0.0" onfocus="this.value=''"/>
+                        <label for="priceID">Unit Price</label>
+                        <input class="form-control form-control-lg" type="text" id="priceID" name="price"
+                               pattern="^[-+]?[0-9]*\.?[0-9]+$" value="0.0" title="between 2 to 4 digits" onfocus="this.value=''"/>
                     </div>
 
                     <!--                </form>-->
@@ -113,11 +113,12 @@
             </div>
         </form>
     </div>
+
 </main>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+<script src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -125,7 +126,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-<script defer type="text/javascript" src="./js/app1.js"></script>
+<script  defer type="text/javascript" src="./js/forms-js/app1.js"></script>
 
 </body>
 </html>
